@@ -1,0 +1,390 @@
+/*
+Styled by : @yash
+          3/7/2023 , Tuesday
+          11:12 PM
+Project :MyProfile
+Contact : contact.yashen@gmail.com
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    width: fit-content;
+}
+
+body {
+    width: 100vw;
+}
+
+:root {
+    --gold: #FEA609;
+    --dark-black: #21201E;
+    --light-black: #282A2D;
+}
+
+/*-----------header---------*/
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #21201E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 2;
+}
+
+.site-logo {
+    width: 20%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-color: #FEA609;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item > a:hover {
+    color: #FEA609;
+}
+
+.my-resume-btn {
+    width: 150px;
+    height: 60%;
+    border-radius: 12px;
+    border: 2px solid #FEA609;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-resume-btn:hover {
+    background-color: #FEA609;
+    border-color: transparent;
+}
+
+.my-resume-btn > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----X----------header-------X--------*/
+
+/* ---------------   Main Area ------------------- */
+main {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/*--------------- Home Section -------------------*/
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-main-heading-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10vw;
+}
+
+.home-main-box-heading {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.home-main-box-heading-a {
+    font-size: 50px;
+}
+
+.home-main-box-heading-jobTitle {
+    color: var(--gold);
+}
+
+.home-main-box-description {
+
+}
+
+.home-main-box-heading-name {
+    color: white;
+    display: inline;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.home-main-box-description {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#home > a {
+    width: 150px;
+    height: 50px;
+    color: white;
+    margin-left: 10vw;
+    text-decoration: none;
+    background-color: var(--gold);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----X--------- Home Section -----------X-------*/
+
+/*-------------  About Section ___________________*/
+#aboutMe {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutMe-left-side {
+    width: 30%;
+}
+
+.aboutMe-profilePic-outer {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 5px solid var(--gold);
+}
+
+.aboutMe-profilePic-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("../assets/img/my_profile_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutMe-right-side {
+    flex: 0.75;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aboutMe-right-side-name {
+    color: var(--gold);
+    font-size: 48px;
+}
+
+.aboutMe-right-side-description {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.social_meadia_and_blog {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 6vh;
+}
+
+.aboutMe-socialMediaLink-list {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutMe-socialMediaLink {
+    width: 46px;
+    height: 46px;
+    background-color: var(--gold);
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.aboutMe-socialMediaLink>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+}
+
+.aboutMe-right-side-myBlogBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe-right-side-myBlogBtn>a{
+    text-decoration: none;
+    color: black;
+}
+
+/*-----X-------  About Section ___________X_______*/
+
+
+/*--------------   What I Do Section -------------*/
+
+#whatIDo{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--dark-black);
+}
+
+.whatIDo-heading{
+    text-align: center;
+    font-size: 32px;
+}
+
+.what{
+    color: white;
+}
+
+.i-do{
+    color: var(--gold);
+}
+
+.whatIDo-slider-item{
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatIDo-slider-container{
+    margin-top: 40px;
+}
+
+.whatIDo-inner{
+    width: 90%;
+    height: 400px;
+    border: 3px solid var(--gold);
+    border-radius: 12px;
+    background-color: var(--light-black);
+    position: relative;
+}
+
+.whatIDo-slider-item-image{
+    width: 80px;
+    height: 80px;
+    background-color: var(--gold);
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    /*color: black;*/
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatIDO-slider-item-textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.whatIDO-slider-item-textBox-heading{
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.whatIDO-slider-item-textBox-experience{
+    color: white;
+    font-size: 16px;
+    margin-top: 36px;
+}
+
+.whatIDO-slider-item-textBox-completedProjects{
+    color: white;
+    font-size: 16px;
+}
+/*------X-------   What I Do Section --------X----*/
+/* ---------------   Main Area ------------------- */

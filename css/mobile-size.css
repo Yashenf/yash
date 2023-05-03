@@ -1,0 +1,40 @@
+/*
+Styled by : @yash
+          4/30/2023 , Sunday
+          11:13 AM
+Project :MyProfile
+Contact : contact.yashen@gmail.com
+*/
+body{
+    width: 100vw;
+}
+
+:root{
+    --gold:#FEA609;
+    --dark-black:#21201E;
+    --light-black:#282A2D;
+}
+/* Media query for mobile screens */
+@media only screen and (max-width: 427px) {
+    /*-------  Home Page ---------------*/
+    .home-main-box-heading{
+        font-size: 22px;
+    }
+
+    .home-main-box-heading-name{
+        font-size: 36px;
+    }
+
+    .home-main-box-heading-a{
+        font-size: 20px;
+    }
+    .home-main-box-heading-jobTitle{
+        font-size: 24px;
+    }
+
+    .home-main-box-description{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /*---X----  Home Page ---------X----*/
+}
